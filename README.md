@@ -1,4 +1,22 @@
-# boxes
+# centos-lain-box
 
-LAIN 提供了一些 vagrant box，如 laincloud/centos-lain、laincloud/lain-box
-和 laincloud/lain-demo，这里是他们的打包脚本。
+`laincloud/centos-lain` 这个 vagrant box 的打包脚本。
+
+> 以下步骤均在 macOS 上进行。
+
+## 打包过程
+
+### 安装依赖
+
+```
+brew install packer
+gem install bento-ya
+```
+
+### 打包
+
+```
+git clone https://github.com/laincloud/centos-lain-box
+cd centos-lain-box/
+bento build centos-lain-7.2-x86_64.json
+```
