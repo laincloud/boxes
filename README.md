@@ -18,5 +18,5 @@ gem install bento-ya
 ```
 git clone https://github.com/laincloud/centos-lain-box
 cd centos-lain-box/
-bento build centos-lain-7.2-x86_64.json
+bento build centos-lain-7-x86_64.json
 ```
